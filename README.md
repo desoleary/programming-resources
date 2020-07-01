@@ -1,5 +1,7 @@
 # Development Resources
 
+[Clojure Script](./ClojureScript.md)
+
 #### Books / Tutorials
 
 ###### JavaScript
