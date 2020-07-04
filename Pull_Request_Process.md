@@ -1,0 +1,39 @@
+# Pull Request Process Document 
+
+- Always work from a well-defined story/issue
+    - A story should never have a blank description
+    - Add a technical design before coding and have it reviewed by a peer.
+- Review the [Git Process Document](./Git_Process.md) for git usage and recommendations.
+- Create your branch right off the development branch
+    - Review Git Usage
+- Keep your PRs small
+    - Breakdown big stories into smaller pieces and add a separate PR for each. 
+- Rebase your branch against development daily to minimize the complexities involved in rebasing against too many merge conflicts.
+- Pull requests should only contain code modifications related to the problem at hand without adding any unnecessary scope.
+- Commit early, often, and in isolation - do not mix code changes with separate intents into one commit
+    - commits should be broken up into logical commits as much as possible.
+    - Leave a blank line between the first and the second lines of a multiline commit message
+    - Review the DIFF for each file before you commit it
+        - Discard lines that were changed that shouldn’t be part of this commit
+    - We run the following hooks before commits, DO NOT skip
+        - Frontend (lint-styled & husky)
+            - eslint
+            - prettier
+            - jest
+            - stylelint
+            - yarn or npm audit (optionally, CI or before remote push)
+        - Backend (overcommit): 
+            - rubocop
+            - fasterer
+            - reek
+            - bundle-audit (optionally, CI or before remote push)
+            - rails_best_practices
+            - brakeman
+- Commit messages should be clear and concise
+    - Use the description field if there is a lot to record
+    - It is a good thing to use the task or issue # in the commit message
+- Write tests that cover your lines of code and the possible scenarios, likewise, write tests for bugs you fix
+    - Read http://betterspecs.org/
+    - Write unit tests for public methods only
+    - UI tests are mandatory for UI changes (non-hotfixes)
+    - API tests are compulsory for backend related changes unless a comprehensive unit test covers it.
