@@ -1,6 +1,10 @@
 # Development Resources
+- [Rails](./Rails.md)
+- [Scrum Notes](./Scrum_Notes.md)
+- [Clojure Script](./ClojureScript.md)
+- [SOA Principles and Design](./SOA_Principles_and_Design.pdf)
+- [BDD Testing Infrastructure](./BBD_Testing_Infrastructure.md)
 
-[Clojure Script](./ClojureScript.md)
 
 #### Books / Tutorials
 

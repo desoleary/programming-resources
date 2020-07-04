@@ -7,6 +7,14 @@
 - [Awesome ClojureScript GitHub II](https://github.com/Jarzka/awesome-clojurescript)
 - [Top 90 ClojureScript Projects](https://awesomeopensource.com/projects/clojurescript)
 
+#### Project Setup
+
+```shell script
+$ wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+$ mv lein /usr/local/bin
+$ exit
+```
+
 #### Tools
 [Compiles ClojureScript](https://github.com/thheller/shadow-cljs)
 
